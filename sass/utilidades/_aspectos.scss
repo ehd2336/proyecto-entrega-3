@@ -1,0 +1,25 @@
+
+.main-aspectos{
+    @extend %flex-column;
+    h1{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    h2, h3, p{
+        text-align: center;
+    }
+    div{
+        @extend %flex-row;
+    }
+    img{
+        width: 10%
+    }
+    .botones-aspectos{
+        justify-content: space-evenly;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }   
+}
+
+

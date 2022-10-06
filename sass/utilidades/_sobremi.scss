@@ -1,0 +1,55 @@
+//mobile first
+
+.barranavegacion {
+    background-color: $color-header-footer;
+    nav{
+        ul{
+            li{
+                font-weight:bold ;
+                font-family:$fuente-header-footer;
+            }
+    
+        }
+    }
+    .navbar-brand{
+        @include navbar;
+    }
+
+}
+.main-sobremi{
+    h2,p{
+         font-family: $fuente-h2-h3;
+        }
+        }
+        .sobremi2{
+            @extend %flex-column;
+            align-items: center;
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+           
+            img{
+                text-align: center;
+                width: 90%;
+            }
+        }    
+        .sobremi3{
+                text-align: center;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                p{
+                margin-top: 1.2rem;
+                margin-left: 1rem;
+            }
+                img{
+                margin-top: 1.2rem;
+                width: 70%;
+            }
+                span{
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+        
+        }
+
+

@@ -1,0 +1,339 @@
+//mq index
+@media screen and (min-width:717px){
+    .contenedor{
+        width: 100%;
+        .header-miproye{
+            display: flex;
+            justify-content: space-between;
+            background-color:$color-header-footer;
+            padding: 1rem 2.2rem;     
+            h1{
+                font-size: 2.8rem;
+                font-family: 'Pacifico', cursive;
+                color: black;
+             }
+             nav{
+                ul{
+                    display: flex;
+                    list-style: none;
+                    li{
+                        text-decoration: none;
+                        margin-right: 1rem;
+                        background-color: whitesmoke;
+                        padding: 0.6rem;
+                        margin-top: 0.5rem;
+                        box-shadow: 0.3rem 0.3rem 0.2rem;
+                        border-radius: 3rem;
+                        transition: 2seg; 
+                        font-size: 1rem;  
+                        font-family: 'Signika Negative', sans-serif; 
+                        a{
+                        list-style:none;
+                        text-decoration: none;
+                        color: black;
+                        text-align: right;
+    
+                        }
+                        &:hover{
+                            background-color:$color-header-footer;
+                            transform: scale(0.9);
+                            box-shadow: 0.1rem 0.1rem 0.3rem black;
+                        
+                        }
+                    }
+                  }
+                }
+             }
+    }
+    .barra-navegacion{
+        display: none;
+       }
+    
+         .main-miproye{
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr ;
+            grid-template-rows: 1fr 2fr 1fr 2fr ;
+            grid-template-areas:
+            "carousel h2"
+            "carousel p"
+            "carousel h2-dos"
+            "carousel p-dos";
+            justify-content: center;
+            justify-items: center;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            gap: 1rem;
+            #carousel{
+                grid-area: carousel;
+                width: 60%;
+            
+             }
+            h2{
+                grid-area: h2;
+                font-size: 2rem;
+                margin-top: 2.2rem;
+                margin-bottom: 1rem;
+                
+             }
+            p{
+                grid-area: p;
+                font-size: 1rem;
+                text-align: center; 
+                margin-bottom: 2.2rem;
+             }
+            .h2-dos{
+                grid-area: h2-dos;
+             }
+            .p-dos{
+                grid-area: p-dos;
+             }
+         }
+         .divisor{
+            background-color: orange;
+            margin-top: 5rem;
+            height: 1rem;
+          }
+          .info-dioses{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 6rem;
+            margin-bottom: 4rem;
+            gap: 20px;
+            p{
+            width: 60rem;   
+            }
+         }
+        .footer-miproye{
+            background-color:$color-header-footer;
+            text-align: center;
+            padding: 0.5rem;
+            width: 100%;
+            a{
+                text-decoration: none;
+             }
+             .imagen-logo{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                align-items: center;
+               
+            }
+           
+            .insta, .facebook, .youtube{
+                @include footer-redes;
+            }
+         }     
+    }
+
+//mq sobremi
+
+@media screen and (min-width:600px) {
+
+    .barranavegacion {
+        background-color:$color-header-footer;
+        li{
+            font-weight:bold ;
+            font-family: 'Dosis', sans-serif;
+        }
+        .navbar-brand{
+            @include navbar;
+        }    
+    }
+    .sobremi2{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        .sobremi2 p{
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            width: 60rem;
+        }
+        img{
+            text-align: center;
+            width: 50rem;
+        }
+    }
+    .sobremi3{
+       
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        .h2-planetas{
+            background-color:$color-header-footer;
+        }
+        .sobremi3 img{
+            margin-top: 1.2rem;
+        }
+        .sobremi3 p{
+            margin-top: 1.2rem;
+            width: 60rem;
+            font-weight: b;
+        }
+        span{
+            font-weight: bold;
+        }
+        .imagen-pluton{
+            grid-area: imagen-pluton;
+            width: 30%;
+            margin-left: 5rem;
+        }
+        .p-pluton{
+            text-align: center;
+            grid-area: p-pluton;
+            width: 35rem;
+            margin-right: 5rem;
+        }
+        .p-venus{
+            text-align: center;
+            grid-area: p-venus;
+            width: 35rem;
+            margin-right: 5rem;
+        }
+        .imagen-venus{
+            grid-area: imagen-venus;
+            width: 30%;
+            margin-left: 5rem;
+        }
+        .imagen-jupiter{
+            grid-area: imagen-jupiter;
+            width: 30%;
+            margin-right: 5rem;
+        }
+        .p-jupiter{
+            text-align: center;
+            grid-area: p-jupiter;
+            width: 35rem;
+            margin-left: 5rem;
+        }
+        .imagen-sun{
+            grid-area: imagen-sun;
+            width: 30%;
+            margin-right: 5rem;
+        }
+        .p-sun{
+            text-align: center;
+            grid-area: p-sun;
+            width: 35rem;
+            margin-left: 5rem;
+        }
+        
+    }
+    .planetas-mios{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+        "p-sun imagen-sun"
+        "imagen-venus p-venus "
+        "p-jupiter imagen-jupiter"
+        "imagen-pluton p-pluton " ;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        gap: 2.5rem;
+     }
+}
+
+//mq carta natal
+@media screen and (min-width:600px){
+.calculo-carta{
+    @include flex-column-acnter-jcenter;
+    p{
+        width: 60rem;
+    }
+    fieldset{
+        background-color: $color-divisor-planetas;
+        width: 100vmin;
+        text-align: center;
+    }
+}
+.section-1{
+    @include flex-column-acnter-jcenter;
+    margin: 1rem;
+    p{
+        width: 60rem;
+        margin-top: 1rem;
+    }
+}
+}
+
+// mq planetas
+@media screen and (min-width:600px){
+    .main-planetas{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr ;
+        grid-template-areas:
+        "planetas-ense planetas-ense"
+        "sol luna"
+        "marte venus"
+        "jupiter saturno" ;
+        justify-content: center;
+        justify-items: center;
+        gap: 1rem;
+        .planetas-ense{
+            grid-area: planetas-ense;
+            width: 100%;
+        }
+        div{
+            @include planetas-cards;
+            background-color: $color-divisor-planetas;
+
+        }
+        .sol{
+            grid-area: sol;
+
+        }
+        .luna{
+            grid-area: luna;
+        }
+        .marte{
+            grid-area: marte;
+        }
+        .venus{
+            grid-area: venus;
+        }
+        .jupiter{
+            grid-area: jupiter;
+        }
+        .saturno{
+            grid-area: saturno;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+}
+
+//mq aspectos
+@media screen and (min-width:600px){
+    .main-aspectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+        .botones-aspectos{
+            justify-content: space-evenly;
+            width: 100%;
+        }
+        h3, p{
+            width: 80rem;
+        }
+       
+    }
+}
+
+//mq blog
+@media screen and (min-width:600px){
+    .main-blog{
+        .p-articulo{
+            width: 50rem;
+        }
+        div{
+            width: 80rem;
+        }
+    }
+}

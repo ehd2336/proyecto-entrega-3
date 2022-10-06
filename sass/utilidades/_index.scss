@@ -1,0 +1,107 @@
+  
+body{
+    background-image: $background-image;
+    }
+.contenedor{
+    .header-miproye{
+        display:none;
+    }
+    .barra-navegacion{
+        background-color: $color-header-footer;
+        nav{
+            ul{
+                li{
+                    font-weight:bold ;
+                    font-family:$fuente-header-footer
+                }
+            }
+        }
+        .navbar-brand{
+            @include navbar;
+        }    
+
+    }
+    
+}
+    //main
+
+.main-miproye{
+        @extend %flex-column ;
+        align-items: center;
+        gap: 0.6rem;
+        h2{
+            margin-top: 2rem;
+            color: black;
+            font-family: $fuente-h2-h3;
+        
+         }
+        img{
+            width: 100%;
+        }
+        p{
+            margin-top: 1rem;
+            text-align: center;
+         }
+     }
+
+     //section
+
+.info-dioses{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        h3{
+            font-family:$fuente-h2-h3 ;
+            color: black;
+            font-family:$fuente-h2-h3;
+        
+        }
+        div button{
+            font-family: 'Signika Negative', sans-serif;
+            color: white;
+            box-shadow: 0.3rem 0.3rem 0.2rem;
+            border-radius: 4rem;
+            transition: 2seg; 
+        
+        }
+        p{
+            text-align: center;
+            margin-top: 1rem,;
+        }
+    }    
+
+//footer
+
+.footer-miproye{
+    text-align: center;
+    background-color:$color-header-footer;
+    width: 100%;
+    padding: 0.6rem;
+    .redes{
+        font-family: $fuente-header-footer;
+        font-weight: bold;
+        color: black;
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    .deerchos{
+        font-family: $fuente-header-footer;
+        color: black;
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    .imagen-logo{
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        align-items: center;
+    }
+    .insta , .facebook, .youtube{
+        @include footer-redes;
+   }
+   
+}
+
+
