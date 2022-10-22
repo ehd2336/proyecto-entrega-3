@@ -13,7 +13,7 @@ body {
   display: none; }
 
 .contenedor .barra-navegacion {
-  background-color: #F0E68C; }
+  background-color: #87CEEB; }
   .contenedor .barra-navegacion nav ul li {
     font-weight: bold;
     font-family: "Dosis", sans-serif; }
@@ -54,7 +54,7 @@ body {
 
 .footer-miproye {
   text-align: center;
-  background-color: #F0E68C;
+  background-color: #87CEEB;
   width: 100%;
   padding: 0.6rem;
   margin-top: 6rem; }
@@ -81,7 +81,7 @@ body {
     margin-right: 1rem; }
 
 .barranavegacion {
-  background-color: #F0E68C; }
+  background-color: #87CEEB; }
   .barranavegacion nav ul li {
     font-weight: bold;
     font-family: "Dosis", sans-serif; }
@@ -136,7 +136,7 @@ body {
   text-align: center; }
 
 .main-planetas div {
-  background-color: #81D8D0; }
+  background-color: #F0E68C; }
 
 .main-planetas h1 {
   margin-top: 2rem;
@@ -172,7 +172,7 @@ body {
     font-family: 'Sriracha', cursive;
     width: 22rem; }
   .main-blog div {
-    background-color: #81D8D0;
+    background-color: #F0E68C;
     gap: 1rem;
     margin-bottom: 2rem;
     text-align: center; }
@@ -192,7 +192,7 @@ body {
     .contenedor .header-miproye {
       display: flex;
       justify-content: space-between;
-      background-color: #F0E68C;
+      background-color: #87CEEB;
       padding: 1rem 2.2rem; }
       .contenedor .header-miproye h1 {
         font-size: 2.8rem;
@@ -218,7 +218,7 @@ body {
             color: black;
             text-align: right; }
           .contenedor .header-miproye nav ul li:hover {
-            background-color: #F0E68C;
+            background-color: #87CEEB;
             transform: scale(0.9);
             box-shadow: 0.1rem 0.1rem 0.3rem black; }
   .barra-navegacion {
@@ -256,7 +256,7 @@ body {
   .divisor p {
     margin-top: 5rem;
     text-align: center;
-    background-color: #F0E68C;
+    background-color: #87CEEB;
     width: 100%; }
   .info-dioses {
     display: flex;
@@ -268,7 +268,7 @@ body {
     .info-dioses p {
       width: 60rem; }
   .footer-miproye {
-    background-color: #F0E68C;
+    background-color: #87CEEB;
     text-align: center;
     padding: 0.5rem;
     width: 100%; }
@@ -285,7 +285,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .barranavegacion {
-    background-color: #F0E68C; }
+    background-color: #87CEEB; }
     .barranavegacion li {
       font-weight: bold;
       font-family: 'Dosis', sans-serif; }
@@ -306,7 +306,7 @@ body {
     margin-top: 3rem;
     margin-bottom: 3rem; }
     .sobremi3 .h2-planetas {
-      background-color: #F0E68C; }
+      background-color: #87CEEB; }
     .sobremi3 .sobremi3 img {
       margin-top: 1.2rem; }
     .sobremi3 .sobremi3 p {
@@ -402,7 +402,7 @@ body {
     .main-planetas div {
       margin: 0.6rem;
       width: 40rem;
-      background-color: #81D8D0;
+      background-color: #F0E68C;
       border-radius: 5rem;
       padding: 2rem; }
     .main-planetas .sol {
