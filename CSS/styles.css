@@ -56,7 +56,8 @@ body {
   text-align: center;
   background-color: #F0E68C;
   width: 100%;
-  padding: 0.6rem; }
+  padding: 0.6rem;
+  margin-top: 6rem; }
   .footer-miproye .redes {
     font-family: "Dosis", sans-serif;
     font-weight: bold;
@@ -66,7 +67,7 @@ body {
   .footer-miproye .deerchos {
     font-family: "Dosis", sans-serif;
     color: black;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 1.2rem; }
   .footer-miproye a {
     text-decoration: none; }
@@ -135,7 +136,7 @@ body {
   text-align: center; }
 
 .main-planetas div {
-  background-color: #FBCEB1; }
+  background-color: #81D8D0; }
 
 .main-planetas h1 {
   margin-top: 2rem;
@@ -171,7 +172,7 @@ body {
     font-family: 'Sriracha', cursive;
     width: 22rem; }
   .main-blog div {
-    background-color: #FBCEB1;
+    background-color: #81D8D0;
     gap: 1rem;
     margin-bottom: 2rem;
     text-align: center; }
@@ -185,7 +186,7 @@ body {
       font-size: 1.3rem;
       color: black; }
 
-@media screen and (min-width: 717px) {
+@media screen and (min-width: 992px) {
   .contenedor {
     width: 100%; }
     .contenedor .header-miproye {
@@ -239,26 +240,29 @@ body {
     .main-miproye h2 {
       grid-area: h2;
       font-size: 2rem;
-      margin-top: 2.2rem;
-      margin-bottom: 1rem; }
+      margin-top: 2.2rem; }
     .main-miproye p {
       grid-area: p;
       font-size: 1rem;
       text-align: center;
-      margin-bottom: 2.2rem; }
+      margin-bottom: 2.2rem;
+      width: 45rem; }
     .main-miproye .h2-dos {
       grid-area: h2-dos; }
     .main-miproye .p-dos {
-      grid-area: p-dos; }
-  .divisor {
-    background-color: orange;
+      grid-area: p-dos;
+      text-align: center;
+      width: 45rem; }
+  .divisor p {
     margin-top: 5rem;
-    height: 1rem; }
+    text-align: center;
+    background-color: #F0E68C;
+    width: 100%; }
   .info-dioses {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 15rem;
     margin-bottom: 4rem;
     gap: 20px; }
     .info-dioses p {
@@ -279,7 +283,7 @@ body {
       height: 2.2rem;
       margin-right: 1rem; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .barranavegacion {
     background-color: #F0E68C; }
     .barranavegacion li {
@@ -291,10 +295,10 @@ body {
   .sobremi2 {
     margin-top: 3rem;
     margin-bottom: 3rem; }
-    .sobremi2 .sobremi2 p {
+    .sobremi2 .p-titulo {
       margin-top: 2rem;
       margin-bottom: 3rem;
-      width: 60rem; }
+      width: 70rem; }
     .sobremi2 img {
       text-align: center;
       width: 50rem; }
@@ -359,7 +363,7 @@ body {
     padding: 1rem;
     gap: 2.5rem; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .calculo-carta {
     display: flex;
     flex-direction: column;
@@ -368,9 +372,10 @@ body {
     .calculo-carta p {
       width: 60rem; }
     .calculo-carta fieldset {
-      background-color: #FBCEB1;
+      background-color: none;
       width: 100vmin;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 4rem; }
   .section-1 {
     display: flex;
     flex-direction: column;
@@ -381,7 +386,7 @@ body {
       width: 60rem;
       margin-top: 1rem; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .main-planetas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -391,12 +396,15 @@ body {
     justify-items: center;
     gap: 1rem; }
     .main-planetas .planetas-ense {
+      margin-top: 3rem;
       grid-area: planetas-ense;
       width: 100%; }
     .main-planetas div {
       margin: 0.6rem;
       width: 40rem;
-      background-color: #FBCEB1; }
+      background-color: #81D8D0;
+      border-radius: 5rem;
+      padding: 2rem; }
     .main-planetas .sol {
       grid-area: sol; }
     .main-planetas .luna {
@@ -411,7 +419,7 @@ body {
       grid-area: saturno;
       margin-bottom: 1rem; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .main-aspectos {
     display: flex;
     flex-direction: column;
@@ -425,11 +433,13 @@ body {
     .main-aspectos h3, .main-aspectos p {
       width: 80rem; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .main-blog .p-articulo {
     width: 50rem; }
   .main-blog div {
-    width: 80rem; } }
+    width: 90rem;
+    border-radius: 3rem;
+    padding: 1rem; } }
 
 * {
   margin: 0;

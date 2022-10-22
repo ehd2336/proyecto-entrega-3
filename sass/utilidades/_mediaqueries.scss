@@ -1,11 +1,17 @@
-//mq index
-@media screen and (min-width:717px){
+//mq index tablet 
+@media screen and (min-width:768px) and (max-width: 991x) {
+      
+}
+
+//mq index desktop 
+
+@media screen and (min-width:992px) {
     .contenedor{
         width: 100%;
         .header-miproye{
             display: flex;
             justify-content: space-between;
-            background-color:$color-header-footer;
+            background-color: $color-header-footer;
             padding: 1rem 2.2rem;     
             h1{
                 font-size: 2.8rem;
@@ -73,7 +79,7 @@
                 grid-area: h2;
                 font-size: 2rem;
                 margin-top: 2.2rem;
-                margin-bottom: 1rem;
+            
                 
              }
             p{
@@ -81,24 +87,32 @@
                 font-size: 1rem;
                 text-align: center; 
                 margin-bottom: 2.2rem;
+                width: 45rem;
+
              }
             .h2-dos{
                 grid-area: h2-dos;
              }
             .p-dos{
                 grid-area: p-dos;
+                text-align: center;
+                width: 45rem;
              }
          }
          .divisor{
-            background-color: orange;
-            margin-top: 5rem;
-            height: 1rem;
+            p{
+                margin-top: 5rem;
+                text-align: center;
+                background-color: #F0E68C;
+                width: 100%;
+                
+            }
           }
           .info-dioses{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 6rem;
+            margin-top: 15rem;
             margin-bottom: 4rem;
             gap: 20px;
             p{
@@ -126,9 +140,13 @@
          }     
     }
 
-//mq sobremi
 
-@media screen and (min-width:600px) {
+//mq sobremi tablet
+@media screen and (min-width:768px) and (max-width: 991x) {
+    
+}
+
+@media screen and (min-width:992px) {
 
     .barranavegacion {
         background-color:$color-header-footer;
@@ -143,10 +161,10 @@
     .sobremi2{
         margin-top: 3rem;
         margin-bottom: 3rem;
-        .sobremi2 p{
+        .p-titulo{
             margin-top: 2rem;
             margin-bottom: 3rem;
-            width: 60rem;
+            width: 70rem;
         }
         img{
             text-align: center;
@@ -235,17 +253,23 @@
      }
 }
 
-//mq carta natal
-@media screen and (min-width:600px){
+//mq carta natal tablet 
+@media screen and (min-width:768px) and (max-width: 991x) {
+    
+}
+
+// mq carta natal desktop
+@media screen and (min-width:992px){
 .calculo-carta{
     @include flex-column-acnter-jcenter;
     p{
         width: 60rem;
     }
     fieldset{
-        background-color: $color-divisor-planetas;
+        background-color: none;
         width: 100vmin;
         text-align: center;
+        margin-bottom: 4rem
     }
 }
 .section-1{
@@ -258,8 +282,13 @@
 }
 }
 
-// mq planetas
-@media screen and (min-width:600px){
+// mq planetas tablet
+@media screen and (min-width:768px) and (max-width: 991x) {
+    
+}
+
+//mq planetas desktop
+@media screen and (min-width:992px){
     .main-planetas{
         display: grid;
         grid-template-columns:1fr 1fr;
@@ -273,13 +302,16 @@
         justify-items: center;
         gap: 1rem;
         .planetas-ense{
+            margin-top: 3rem;
             grid-area: planetas-ense;
             width: 100%;
         }
         div{
             @include planetas-cards;
             background-color: $color-divisor-planetas;
-
+            border-radius: 5rem;
+            padding: 2rem;
+            
         }
         .sol{
             grid-area: sol;
@@ -306,8 +338,13 @@
 
 }
 
-//mq aspectos
-@media screen and (min-width:600px){
+//mq aspectos tablet 
+@media screen and (min-width:768px) and (max-width: 991x) {
+    
+}
+
+// mq aspectos desktop
+@media screen and (min-width:992px){
     .main-aspectos{
         display: flex;
         flex-direction: column;
@@ -326,14 +363,22 @@
     }
 }
 
-//mq blog
-@media screen and (min-width:600px){
+//mq blog tablet
+@media screen and (min-width:768px) and (max-width: 991x) {
+    
+}
+
+//mq blog desktop
+@media screen and (min-width:992px){
     .main-blog{
         .p-articulo{
             width: 50rem;
         }
         div{
-            width: 80rem;
+            width: 90rem;
+            border-radius: 3rem;
+            padding: 1rem;
+          
         }
     }
 }

@@ -77,6 +77,7 @@ body{
     background-color:$color-header-footer;
     width: 100%;
     padding: 0.6rem;
+    margin-top: 6rem;
     .redes{
         font-family: $fuente-header-footer;
         font-weight: bold;
@@ -87,7 +88,7 @@ body{
     .deerchos{
         font-family: $fuente-header-footer;
         color: black;
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-bottom: 1.2rem;
     }
     a{
